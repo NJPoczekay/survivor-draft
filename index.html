@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survivor 50 Fantasy Draft</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="title-wrap">
+          <p class="kicker">Fantasy Survivor Draft</p>
+          <h1>Season 50 Snake Draft</h1>
+        </div>
+
+        <div class="team-setup">
+          <label for="team1Name">Team 1 Name</label>
+          <input id="team1Name" type="text" maxlength="40" value="Team 1" />
+        </div>
+        <div class="team-setup">
+          <label for="team2Name">Team 2 Name</label>
+          <input id="team2Name" type="text" maxlength="40" value="Team 2" />
+        </div>
+
+        <div class="actions">
+          <button id="startBtn" class="btn btn-primary">Start Draft</button>
+          <button id="undoBtn" class="btn">Undo Last Pick</button>
+          <button id="resetBtn" class="btn">Reset Draft</button>
+        </div>
+      </header>
+
+      <section class="status-row">
+        <div class="status-box">
+          <span class="status-label">On the clock</span>
+          <strong id="activeTeamLabel">Team 1</strong>
+        </div>
+        <div class="status-box">
+          <span class="status-label">Pick #</span>
+          <strong id="pickNumberLabel">1</strong>
+        </div>
+        <div class="status-box">
+          <span class="status-label">Timer</span>
+          <strong id="timerLabel">01:30</strong>
+        </div>
+      </section>
+
+      <p id="statusMessage" class="status-message">Set team names and start the draft.</p>
+      <p id="loadError" class="load-error hidden"></p>
+
+      <main class="draft-grid">
+        <section id="team1Panel" class="panel team-panel">
+          <h2 id="team1Heading">Team 1 Picks</h2>
+          <ol id="team1Roster" class="roster-list"></ol>
+        </section>
+
+        <section class="panel pool-panel">
+          <h2>Available Players</h2>
+          <div id="playerPool" class="pool-grid"></div>
+        </section>
+
+        <section id="team2Panel" class="panel team-panel">
+          <h2 id="team2Heading">Team 2 Picks</h2>
+          <ol id="team2Roster" class="roster-list"></ol>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
