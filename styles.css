@@ -35,7 +35,7 @@ body {
 
 .top-bar {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr auto;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr auto;
   gap: 0.85rem;
   align-items: end;
 }
@@ -63,6 +63,16 @@ body {
 }
 
 .team-setup input {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.5rem;
+  border: 1px solid #b19f85;
+  background: #fffdf8;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.team-setup select {
   width: 100%;
   padding: 0.55rem 0.65rem;
   border-radius: 0.5rem;

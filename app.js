@@ -1,10 +1,13 @@
 const DEFAULT_TIMER_SECONDS = 90;
+const TIMER_MODE_COUNTDOWN = "countdown";
+const TIMER_MODE_COUNT_UP = "count-up";
 
 const state = {
   teamNames: ["Team 1", "Team 2"],
   started: false,
   pickNumber: 0,
   currentTeamIndex: 0,
+  timerMode: TIMER_MODE_COUNTDOWN,
   timerSecondsRemaining: DEFAULT_TIMER_SECONDS,
   availablePlayers: [],
   draftedByTeam: [[], []],
@@ -31,6 +34,7 @@ const elements = {
   startBtn: document.getElementById("startBtn"),
   undoBtn: document.getElementById("undoBtn"),
   resetBtn: document.getElementById("resetBtn"),
+  timerModeSelect: document.getElementById("timerMode"),
 };
 
 let timerId = null;
@@ -69,6 +73,10 @@ function computeCurrentTeamIndex(pickNumber) {
 
 function renderTimer() {
   elements.timerLabel.textContent = formatTimer(state.timerSecondsRemaining);
+}
+
+function renderTimerMode() {
+  elements.timerModeSelect.value = state.timerMode;
 }
 
 function renderTeams() {
@@ -155,6 +163,7 @@ function renderAll() {
   renderPool();
   renderTurnAndStatus();
   renderTimer();
+  renderTimerMode();
   renderControlState();
   renderLoadError();
 }
@@ -173,17 +182,22 @@ function startTimer() {
       return;
     }
 
-    state.timerSecondsRemaining -= 1;
-    if (state.timerSecondsRemaining <= 0) {
-      advanceTurnBySkip();
-      return;
+    if (state.timerMode === TIMER_MODE_COUNTDOWN) {
+      state.timerSecondsRemaining -= 1;
+      if (state.timerSecondsRemaining <= 0) {
+        advanceTurnBySkip();
+        return;
+      }
+    } else {
+      state.timerSecondsRemaining += 1;
     }
     renderTimer();
   }, 1000);
 }
 
 function resetTurnTimer() {
-  state.timerSecondsRemaining = DEFAULT_TIMER_SECONDS;
+  state.timerSecondsRemaining =
+    state.timerMode === TIMER_MODE_COUNTDOWN ? DEFAULT_TIMER_SECONDS : 0;
 }
 
 function insertPlayerBackInOrder(player) {
@@ -304,12 +318,31 @@ function resetDraft() {
   state.started = false;
   state.pickNumber = 0;
   state.currentTeamIndex = 0;
-  state.timerSecondsRemaining = DEFAULT_TIMER_SECONDS;
+  resetTurnTimer();
   state.availablePlayers = initialPlayers.map(clonePlayer);
   state.draftedByTeam = [[], []];
   state.history = [];
   state.lastEventMessage = "Draft reset. Team 1 starts when you click Start Draft.";
   stopTimer();
+  renderAll();
+}
+
+function handleTimerModeChange(value) {
+  if (value !== TIMER_MODE_COUNTDOWN && value !== TIMER_MODE_COUNT_UP) {
+    return;
+  }
+
+  if (state.timerMode === value) {
+    return;
+  }
+
+  state.timerMode = value;
+  resetTurnTimer();
+
+  if (state.started && !isDraftComplete()) {
+    startTimer();
+  }
+
   renderAll();
 }
 
@@ -345,6 +378,9 @@ function wireEvents() {
   });
   elements.team2NameInput.addEventListener("input", (event) => {
     handleTeamNameInput(1, event.target.value);
+  });
+  elements.timerModeSelect.addEventListener("change", (event) => {
+    handleTimerModeChange(event.target.value);
   });
 }
 
