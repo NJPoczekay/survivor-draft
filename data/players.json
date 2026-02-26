@@ -1,145 +1,145 @@
 [
   {
-    "id": "chris-underwood",
-    "name": "Chris Underwood",
+    "id": "aubry-bracco",
+    "name": "Aubry Bracco",
     "tribe": "Vatu",
     "tribeColor": "#2E8B57"
   },
   {
-    "id": "chrissy-hofbeck",
-    "name": "Chrissy Hofbeck",
+    "id": "quintavius-q-burdette",
+    "name": "Quintavius \"Q\" Burdette",
     "tribe": "Vatu",
     "tribeColor": "#2E8B57"
   },
   {
-    "id": "davie-rickenbacker",
-    "name": "Davie Rickenbacker",
+    "id": "colby-donaldson",
+    "name": "Colby Donaldson",
     "tribe": "Vatu",
     "tribeColor": "#2E8B57"
-  },
-  {
-    "id": "domenick-abbate",
-    "name": "Domenick Abbate",
-    "tribe": "Vatu",
-    "tribeColor": "#2E8B57"
-  },
-  {
-    "id": "jonathan-young",
-    "name": "Jonathan Young",
-    "tribe": "Vatu",
-    "tribeColor": "#2E8B57"
-  },
-  {
-    "id": "kellyn-bechtold",
-    "name": "Kellyn Bechtold",
-    "tribe": "Vatu",
-    "tribeColor": "#2E8B57"
-  },
-  {
-    "id": "mike-turner",
-    "name": "Mike Turner",
-    "tribe": "Vatu",
-    "tribeColor": "#2E8B57"
-  },
-  {
-    "id": "rick-devens",
-    "name": "Rick Devens",
-    "tribe": "Vatu",
-    "tribeColor": "#2E8B57"
-  },
-  {
-    "id": "carolyn-wiger",
-    "name": "Carolyn Wiger",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
-  },
-  {
-    "id": "christian-hubicki",
-    "name": "Christian Hubicki",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
-  },
-  {
-    "id": "dee-valladares",
-    "name": "Dee Valladares",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
-  },
-  {
-    "id": "emily-flippen",
-    "name": "Emily Flippen",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
-  },
-  {
-    "id": "genevieve-mushaluk",
-    "name": "Genevieve Mushaluk",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
-  },
-  {
-    "id": "jesse-lopez",
-    "name": "Jesse Lopez",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
   },
   {
     "id": "kyle-fraser",
     "name": "Kyle Fraser",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
-  },
-  {
-    "id": "q-burdette",
-    "name": "Q Burdette",
-    "tribe": "Kalo",
-    "tribeColor": "#C0392B"
+    "tribe": "Vatu",
+    "tribeColor": "#2E8B57"
   },
   {
     "id": "angelina-keeley",
     "name": "Angelina Keeley",
-    "tribe": "Cila",
-    "tribeColor": "#D4AC0D"
+    "tribe": "Vatu",
+    "tribeColor": "#2E8B57"
+  },
+  {
+    "id": "stephenie-lagrossa-kendrick",
+    "name": "Stephenie LaGrossa Kendrick",
+    "tribe": "Vatu",
+    "tribeColor": "#2E8B57"
+  },
+  {
+    "id": "genevieve-mushaluk",
+    "name": "Genevieve Mushaluk",
+    "tribe": "Vatu",
+    "tribeColor": "#2E8B57"
+  },
+  {
+    "id": "rizo-velovic",
+    "name": "Rizo Velovic",
+    "tribe": "Vatu",
+    "tribeColor": "#2E8B57"
   },
   {
     "id": "charlie-davis",
     "name": "Charlie Davis",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "tiffany-ervin",
+    "name": "Tiffany Ervin",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "chrissy-hofbeck",
+    "name": "Chrissy Hofbeck",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "kamilla-karthigesu",
+    "name": "Kamilla Karthigesu",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "dianelys-dee-valladares",
+    "name": "Dianelys \"Dee\" Valladares",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "benjamin-coach-wade",
+    "name": "Benjamin \"Coach\" Wade",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "mike-white",
+    "name": "Mike White",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "jonathan-young",
+    "name": "Jonathan Young",
+    "tribe": "Kalo",
+    "tribeColor": "#C0392B"
+  },
+  {
+    "id": "rick-devens",
+    "name": "Rick Devens",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   },
   {
-    "id": "cody-assenmacher",
-    "name": "Cody Assenmacher",
+    "id": "cirie-fields",
+    "name": "Cirie Fields",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   },
   {
-    "id": "jake-okane",
-    "name": "Jake O'Kane",
+    "id": "emily-flippen",
+    "name": "Emily Flippen",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   },
   {
-    "id": "kaleb-gebrewold",
-    "name": "Kaleb Gebrewold",
+    "id": "christian-hubicki",
+    "name": "Christian Hubicki",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   },
   {
-    "id": "kellie-nalbandian",
-    "name": "Kellie Nalbandian",
+    "id": "joe-hunter",
+    "name": "Joe Hunter",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   },
   {
-    "id": "shan-smith",
-    "name": "Shan Smith",
+    "id": "jenna-lewis-dougherty",
+    "name": "Jenna Lewis-Dougherty",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   },
   {
-    "id": "tiffany-nicole-ervin",
-    "name": "Tiffany Nicole Ervin",
+    "id": "savannah-louie",
+    "name": "Savannah Louie",
+    "tribe": "Cila",
+    "tribeColor": "#D4AC0D"
+  },
+  {
+    "id": "oscar-ozzy-lusth",
+    "name": "Oscar \"Ozzy\" Lusth",
     "tribe": "Cila",
     "tribeColor": "#D4AC0D"
   }
